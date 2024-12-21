@@ -12,10 +12,10 @@ import {
 
 export default function Home() {
   return (
-    <div className="ml-72 p-8">
-      <section className="mb-12">
-        <h2 className="mb-6 text-3xl font-bold">关于我</h2>
-        <p className="mb-6 text-zinc-400">
+    <div className="p-4 md:ml-72 md:p-8">
+      <section className="mb-8 md:mb-12">
+        <h2 className="mb-4 md:mb-6 text-2xl md:text-3xl font-bold">关于我</h2>
+        <p className="mb-4 md:mb-6 text-zinc-400">
         我是一名高级运维工程师。拥有9年丰富的运维经验，维护过海外电商、erp系统、业务中台、量化金融平台、智能问答、智能外呼产品。
         擅长devops、linux、中间件部署、应用部署、shell和python脚本编写、问题排查。
         </p>
@@ -24,18 +24,18 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="mb-12">
-        <h2 className="mb-6 text-3xl font-bold">我正在做的</h2>
-        <div className="grid gap-6 md:grid-cols-2">
+      <section className="mb-8 md:mb-12">
+        <h2 className="mb-4 md:mb-6 text-2xl md:text-3xl font-bold">我正在做的</h2>
+        <div className="grid gap-4 md:gap-6 md:grid-cols-2">
           <Card className="bg-zinc-800/50">
-            <CardContent className="p-6">
-              <h3 className="mb-2 text-xl font-semibold">我正在做什么</h3>
+            <CardContent className="p-4 md:p-6">
+              <h3 className="mb-2 text-lg md:text-xl font-semibold">我正在做什么</h3>
               <p className="text-zinc-400">在自我提升上，通过阅读专业书籍、社区交流来优化技能。</p>
             </CardContent>
           </Card>
           <Card className="bg-zinc-800/50">
-            <CardContent className="p-6">
-              <h3 className="mb-2 text-xl font-semibold">运维</h3>
+            <CardContent className="p-4 md:p-6">
+              <h3 className="mb-2 text-lg md:text-xl font-semibold">运维</h3>
               <p className="text-zinc-400">产品功能发布，应用部署，问题排查，脚本编写，服务器的维护</p>
             </CardContent>
           </Card>
@@ -43,11 +43,11 @@ export default function Home() {
       </section>
 
       <section>
-        <h2 className="mb-6 text-3xl font-bold">相处感言</h2>
-        <div className="grid gap-6 md:grid-cols-2">
+        <h2 className="mb-4 md:mb-6 text-2xl md:text-3xl font-bold">相处感言</h2>
+        <div className="grid gap-4 md:gap-6 md:grid-cols-2">
           <Dialog>
             <DialogTrigger asChild>
-              <CardContent className="flex gap-4 p-6 cursor-pointer hover:bg-zinc-700/50 transition-colors">
+              <CardContent className="flex gap-4 p-4 md:p-6 cursor-pointer hover:bg-zinc-700/50 transition-colors">
                 <Image
                   src="/avatar-placeholder.svg"
                   alt="Lucas Liang"
@@ -76,7 +76,7 @@ export default function Home() {
           </Dialog>
           <Dialog>
             <DialogTrigger asChild>
-              <CardContent className="flex gap-4 p-6 cursor-pointer hover:bg-zinc-700/50 transition-colors">
+              <CardContent className="flex gap-4 p-4 md:p-6 cursor-pointer hover:bg-zinc-700/50 transition-colors">
                 <Image
                   src="/avatar-placeholder.svg"
                   alt="Ava Zhang"

@@ -31,9 +31,9 @@ export default function Blog() {
   ]
 
   return (
-    <div className="ml-72 p-8">
-      <h2 className="mb-6 text-3xl font-bold">博客</h2>
-      <div className="grid gap-6 md:grid-cols-2">
+    <div className="p-4 md:ml-72 md:p-8">
+      <h2 className="mb-4 md:mb-6 text-2xl md:text-3xl font-bold">博客</h2>
+      <div className="grid gap-4 md:gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <Card key={project.title} className="overflow-hidden bg-zinc-800/50">
             <div className="relative aspect-[16/9]">
@@ -45,10 +45,10 @@ export default function Blog() {
                 priority={true}
               />
             </div>
-            <CardContent className="p-6">
-              <div className="mb-2 text-sm text-zinc-400">网站 • {project.year}年</div>
-              <h3 className="mb-2 text-xl font-semibold">{project.title}</h3>
-              <p className="text-zinc-400">{project.description}</p>
+            <CardContent className="p-4 md:p-6">
+              <div className="mb-2 text-xs md:text-sm text-zinc-400">网站 • {project.year}年</div>
+              <h3 className="mb-2 text-lg md:text-xl font-semibold">{project.title}</h3>
+              <p className="text-sm md:text-base text-zinc-400">{project.description}</p>
             </CardContent>
           </Card>
         ))}
@@ -56,4 +56,3 @@ export default function Blog() {
     </div>
   )
 }
-

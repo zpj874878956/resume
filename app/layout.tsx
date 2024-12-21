@@ -16,11 +16,11 @@ export default function RootLayout({
   return (
     <html lang="zh">
       <body className="bg-zinc-900 text-zinc-100">
-        <div className="flex min-h-screen">
+        <div className="flex flex-col md:flex-row min-h-screen">
           <Sidebar />
           <div className="flex-1">
             <Navbar />
-            <main className="mt-16">
+            <main className="mt-16 w-full">
               {children}
             </main>
           </div>
